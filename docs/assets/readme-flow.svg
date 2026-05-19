@@ -1,0 +1,42 @@
+<svg width="1120" height="360" viewBox="0 0 1120 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Codex Quota Coach data flow</title>
+  <desc id="desc">Codex logs are submitted to a local Hub, exposed through a tunnel, then shown by an Android widget.</desc>
+  <rect width="1120" height="360" rx="28" fill="#F7F8F4"/>
+  <rect x="42" y="42" width="1036" height="276" rx="24" fill="#FFFFFF" stroke="#DCE3DE"/>
+  <text x="76" y="92" fill="#1D2521" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="30" font-weight="760">它不是魔法，只是一条很短的数据链路</text>
+  <text x="76" y="124" fill="#64706A" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16">每台电脑定时提交快照，手机只读最新结果；你可以只用局域网，也可以加 Cloudflare Tunnel。</text>
+
+  <g transform="translate(74 172)">
+    <rect x="0" y="0" width="180" height="92" rx="18" fill="#ECF7F1" stroke="#BBDCCA"/>
+    <text x="22" y="34" fill="#1D2521" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="720">Codex 日志</text>
+    <text x="22" y="62" fill="#627169" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="13">本机 jsonl</text>
+  </g>
+
+  <path d="M276 218H352" stroke="#6BB38E" stroke-width="3" stroke-linecap="round"/>
+  <path d="M342 207L356 218L342 229" stroke="#6BB38E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(378 172)">
+    <rect x="0" y="0" width="180" height="92" rx="18" fill="#FFF7E0" stroke="#E4CC87"/>
+    <text x="22" y="34" fill="#1D2521" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="720">submit</text>
+    <text x="22" y="62" fill="#6E6549" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="13">每 5 分钟一次</text>
+  </g>
+
+  <path d="M580 218H656" stroke="#D5A734" stroke-width="3" stroke-linecap="round"/>
+  <path d="M646 207L660 218L646 229" stroke="#D5A734" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(682 172)">
+    <rect x="0" y="0" width="180" height="92" rx="18" fill="#EEF2FF" stroke="#C7D2FE"/>
+    <text x="22" y="34" fill="#1D2521" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="720">Quota Hub</text>
+    <text x="22" y="62" fill="#5F6682" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="13">保存最新 snapshot</text>
+  </g>
+
+  <path d="M884 218H960" stroke="#6677CF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M950 207L964 218L950 229" stroke="#6677CF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(986 172)">
+    <rect x="0" y="0" width="66" height="92" rx="18" fill="#20252A"/>
+    <rect x="12" y="14" width="42" height="64" rx="10" fill="#2D3338"/>
+    <circle cx="33" cy="68" r="3" fill="#A8DDBF"/>
+    <text x="33" y="110" fill="#1D2521" text-anchor="middle" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="700">Widget</text>
+  </g>
+</svg>
