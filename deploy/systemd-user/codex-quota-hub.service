@@ -1,0 +1,13 @@
+[Unit]
+Description=Codex Quota Hub
+After=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=%h/.config/codex-quota-coach/env
+ExecStart=/usr/bin/bash -lc 'cd "${PROJECT_DIR:?PROJECT_DIR is required}" && exec ./scripts/run-hub-public.sh'
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

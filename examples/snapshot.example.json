@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-05-19T17:34:30+08:00",
+  "collectedAt": "2026-05-19T17:35:00+08:00",
+  "ageSeconds": 30,
+  "sourceDevice": "laptop-home",
+  "plan": "plus",
+  "limitId": "codex",
+  "primary": {
+    "label": "5h",
+    "usedPercent": 20,
+    "remainingPercent": 80,
+    "remainingText": "80%",
+    "idealRemainingPercent": 60,
+    "idleGap": 20,
+    "status": "slow",
+    "statusText": "偏慢",
+    "windowMinutes": 300,
+    "resetAt": "2026-05-19T22:15:25+08:00",
+    "resetAtText": "22:15",
+    "expired": false
+  },
+  "weekly": {
+    "label": "Weekly",
+    "usedPercent": 6,
+    "remainingPercent": 94,
+    "remainingText": "94%",
+    "idealRemainingPercent": 70,
+    "idleGap": 24,
+    "status": "slow",
+    "statusText": "偏慢",
+    "windowMinutes": 10080,
+    "resetAt": "2026-05-25T09:47:11+08:00",
+    "resetAtText": "Mon 09:47",
+    "expired": false
+  },
+  "headline": "使用偏慢",
+  "stale": false
+}

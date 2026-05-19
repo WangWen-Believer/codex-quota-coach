@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-quota-coach"
+version = "0.1.0"
+description = "A lightweight Codex quota snapshot hub and Android widget companion."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Codex Quota Coach contributors" }
+]
+keywords = ["codex", "quota", "android-widget", "cloudflare-tunnel"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Utilities"
+]
+dependencies = []
+
+[project.scripts]
+codex-quota-coach = "quota_coach.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["quota_coach*"]

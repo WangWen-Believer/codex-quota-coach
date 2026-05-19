@@ -1,0 +1,14 @@
+[Unit]
+Description=Codex Quota Cloudflare Tunnel
+After=network-online.target codex-quota-hub.service
+Wants=codex-quota-hub.service
+
+[Service]
+Type=simple
+EnvironmentFile=%h/.config/codex-quota-coach/env
+ExecStart=/usr/bin/bash -lc 'cd "${PROJECT_DIR:?PROJECT_DIR is required}" && exec ./scripts/run-cloudflare-tunnel.sh'
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

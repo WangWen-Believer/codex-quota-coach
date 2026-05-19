@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="codex_background">#111315</color>
+    <color name="codex_card">#191C1F</color>
+    <color name="codex_border">#2B2F33</color>
+    <color name="codex_text">#E8EAED</color>
+    <color name="codex_muted">#9AA0A6</color>
+    <color name="codex_green">#43D17A</color>
+    <color name="codex_yellow">#E7B84B</color>
+    <color name="codex_red">#EF6A6A</color>
+</resources>

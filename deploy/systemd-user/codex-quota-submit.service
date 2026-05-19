@@ -1,0 +1,9 @@
+[Unit]
+Description=Submit Codex quota snapshot to local Hub
+After=codex-quota-hub.service
+Wants=codex-quota-hub.service
+
+[Service]
+Type=oneshot
+EnvironmentFile=%h/.config/codex-quota-coach/env
+ExecStart=/usr/bin/bash -lc 'cd "${PROJECT_DIR:?PROJECT_DIR is required}" && exec ./scripts/submit-local.sh'
